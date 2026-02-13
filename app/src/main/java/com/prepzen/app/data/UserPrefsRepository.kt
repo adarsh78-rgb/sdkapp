@@ -35,7 +35,7 @@ class UserPrefsRepository(context: Context) {
     fun getViewedTopics(): Set<String> = prefs.getStringSet(KEY_VIEWED_TOPICS, emptySet()) ?: emptySet()
 
     fun saveQuizScore(score: QuizScore) {
-        val existing = JSONArray(prefs.getString(KEY_QUIZ_SCORES, "[]"))
+        val existing = JSONArray(prefs.getString(KEY_QUIZ_SCORES, "[]") ?: "[]")
         val updated = JSONArray()
         val all = mutableListOf<JSONObject>()
         for (i in 0 until existing.length()) {
@@ -53,7 +53,7 @@ class UserPrefsRepository(context: Context) {
     }
 
     fun getQuizScores(): List<QuizScore> {
-        val array = JSONArray(prefs.getString(KEY_QUIZ_SCORES, "[]"))
+        val array = JSONArray(prefs.getString(KEY_QUIZ_SCORES, "[]") ?: "[]")
         val list = mutableListOf<QuizScore>()
         for (i in 0 until array.length()) {
             val obj = array.getJSONObject(i)
