@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PrepZen - English & Aptitude"
+            android:textColor="@color/ink"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Learn daily. Crack placements & govt exams."
+            android:textColor="@color/ink_soft"
+            android:textSize="14sp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardEnglish"
+            style="@style/Widget.PrepZen.Card"
+            android:layout_marginTop="20dp"
+            app:cardBackgroundColor="@color/card_blue">
+
+            <TextView
+                style="@style/Widget.PrepZen.CardTitle"
+                android:text="English" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAptitude"
+            style="@style/Widget.PrepZen.Card"
+            app:cardBackgroundColor="@color/card_gray">
+
+            <TextView
+                style="@style/Widget.PrepZen.CardTitle"
+                android:text="Aptitude" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardQuiz"
+            style="@style/Widget.PrepZen.Card"
+            app:cardBackgroundColor="@color/card_blue">
+
+            <TextView
+                style="@style/Widget.PrepZen.CardTitle"
+                android:text="Quiz" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardProgress"
+            style="@style/Widget.PrepZen.Card"
+            app:cardBackgroundColor="@color/card_gray">
+
+            <TextView
+                style="@style/Widget.PrepZen.CardTitle"
+                android:text="Progress" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardAbout"
+            style="@style/Widget.PrepZen.Card"
+            app:cardBackgroundColor="@color/card_blue">
+
+            <TextView
+                style="@style/Widget.PrepZen.CardTitle"
+                android:text="About" />
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>
