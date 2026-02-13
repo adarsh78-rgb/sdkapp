@@ -44,7 +44,7 @@ class QuizSessionViewModel(
         val q = questions[currentIndex]
         val isCorrect = answerIndex == q.answerIndex
         if (isCorrect) score++
-        feedbackEvent.value = isCorrect to q.explanation
+        feedbackEvent.postValue(isCorrect to q.explanation)
     }
 
     fun next() {
