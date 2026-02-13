@@ -14,7 +14,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="PrepZen - English & Aptitude"
+            android:text="PrepZen - English &amp; Aptitude"
             android:textColor="@color/ink"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -23,7 +23,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Learn daily. Crack placements & govt exams."
+            android:text="Learn daily. Crack placements &amp; govt exams."
             android:textColor="@color/ink_soft"
             android:textSize="14sp" />
 
